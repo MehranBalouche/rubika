@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "iransans";
+  src: url(./fonts/iransansweb.woff2) format("woff2");
+}
+
+//  -------------------------------> Variables
+
+:root {
+  // color
+  --text-color: #212121;
+  --purple: #794387;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "iransans";
+  color: var(--text-color);
+  font-size: 1rem;
+}
+// ---------------------------------> Navbar
+
+.nav {
+  &-logo {
+    width: 110px;
+    z-index: 999;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-item {
+    a {
+      margin-right: 34px;
+
+      transition: all 0.4s;
+      &:hover:not(.active-menu) {
+        color: var(--purple);
+      }
+     
+    }
+  }
+}
+ .active-menu {
+        color: var(--purple) !important;
+      }
+// ---------------------------------> download section
+
+.download{
+    padding-top: 5rem;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    &-title{
+        font-size: 1.375rem;
+    }
+    &-items{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-btn{
+        margin:1rem 0.5rem ;
+        border: 1px solid var(--purple);
+        border-radius: 4px;
+        padding: 0.8rem 0.9rem;
+        color: var(--purple);
+        text-decoration: none;
+        font-size: 0.875rem;  
+    }
+}
+// ---------------------------------> Service section
+.service{
+
+    &-items{
+        text-align: center;
+    }
+    &-icon{
+        color: var(--purple);
+        font-size: 1.8rem;
+    }
+    &-title{
+        color: var(--purple);
+    }
+    &-text{
+        max-width: 360px;
+        margin: auto;
+        text-align: center;
+        color: var(--text-color);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2.5rem;
+    }
+}
+
+// --------------------------> Breakpoints
+
+@media (max-width: 510px) {
+    .download-btns{
+        flex-direction: column;
+    }
+}
