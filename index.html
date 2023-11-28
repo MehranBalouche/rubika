@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/main-style.css" />
   </head>
   <body>
-    <main class="container-xxl">
+    <main>
       <nav class="navbar navbar-expand-lg fixed-top bg-white shadow nav">
         <div class="container-fluid">
           <a class="navbar-brand nav-logo" href="#"
@@ -54,7 +54,7 @@
         </div>
       </nav>
       <!-- download section -->
-      <section>
+      <section class="container-fluid">
         <div class="container-fluid download">
           <div class="row justify-content-around">
             <div class="col-lg-5 order-1 order-lg-0">
@@ -79,8 +79,8 @@
           </div>
         </div>
       </section>
-      <!-- service-section -->
-      <section class="service">
+      <!-- service-section 1 -->
+      <section class="container-fluid service">
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-around">
             <div class="col-lg-7">
@@ -102,8 +102,8 @@
           </div>
         </div>
       </section>
-      <!-- service-section -->
-      <section class="service">
+      <!-- service-section 2 -->
+      <section class="container-fluid service">
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-around">
             <div class="col-lg-5">
@@ -113,30 +113,47 @@
             </div>
             <div class="col-lg-7">
               <div class="service-items ms-5">
-                <i class="bi bi-chat-square-dots-fill service-icon"></i>
-                <h5 class="service-title">پیام رسان</h5>
+                <svg
+                  class="service-icon"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 26 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#794387"
+                    d="M17.5625 0H7.8125C3.5 0 0 3.5 0 7.8125V18.6458C0 22.9583 3.5 26.4583 7.8125 26.4583H17.5833C21.8958 26.4583 25.3958 22.9583 25.3958 18.6458V7.8125C25.375 3.5 21.8958 0 17.5625 0ZM13 18.4583C10 18.4583 7.5625 16.0208 7.5625 13.0208C7.5625 10.0208 10 7.58333 13 7.58333C16 7.58333 18.4375 10.0208 18.4375 13.0208C18.4583 16.0208 16.0208 18.4583 13 18.4583Z"
+                  />
+                  <path
+                    fill="#794387"
+                    d="M9.64583 13.2918C9.64583 13.2918 9.625 13.2918 9.64583 13.2918C9.33333 13.2918 9.125 13.0418 9.125 12.7501C9.1875 10.5626 11.0208 8.75009 13.2292 8.89592C13.5208 8.89592 13.75 9.14592 13.7292 9.43759C13.7292 9.72926 13.5208 9.91676 13.1875 9.93759C11.6042 9.85426 10.2083 11.1668 10.1458 12.7918C10.1458 13.0626 9.91667 13.2918 9.64583 13.2918Z"
+                  />
+                </svg>
+                <h5 class="service-title">روبینو</h5>
                 <p class="service-text">
-                  پیام‌رسان روبیکا، دارای امکانات مفیدی مثل، تماس صوتی و تصویری،
-                  ارسال فایل و پخش زنده است؛ که بسیاری از امکانات این بخش با
-                  اینترنت رایگان همراه اول و ایرانسل ارائه می‌شوند.
+                  شبکه اجتماعی روبیکا که مخصوص تصویر و ویدیو است. روبینو با فضای
+                  صمیمی و راحتش، به شما امکان می‌دهد زیبا‌ترین لحظه‌هایتان را به
+                  اشتراک بگذارید.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- service-section -->
-      <section class="service">
+      <!-- service-section 3 -->
+      <section class="container-fluid service">
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-around">
             <div class="col-lg-7">
               <div class="service-items me-5">
-                <i class="bi bi-chat-square-dots-fill service-icon"></i>
-                <h5 class="service-title">پیام رسان</h5>
+                <i class="bi bi-credit-card-fill service-icon"></i>
+                <h5 class="service-title">سرویس کسب درآمد</h5>
                 <p class="service-text">
-                  پیام‌رسان روبیکا، دارای امکانات مفیدی مثل، تماس صوتی و تصویری،
-                  ارسال فایل و پخش زنده است؛ که بسیاری از امکانات این بخش با
-                  اینترنت رایگان همراه اول و ایرانسل ارائه می‌شوند.
+                  فقط با داشتن یک کانال یا صفحه روبینو، کسب درآمد را در روبیکا
+                  شروع کنید. در سرویس جدید کسب درآمد روبیکا، درآمد شما بر اساس
+                  تعداد کاربران فعال و حجم ترافیک مصرفی کاربران در کانال یا
+                  میزان محبوبیت صفحه روبینو محاسبه می‌شود.
                 </p>
               </div>
             </div>
@@ -148,8 +165,8 @@
           </div>
         </div>
       </section>
-      <!-- service-section -->
-      <section class="service">
+      <!-- service-section 4 -->
+      <section class="container-fluid service">
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-around">
             <div class="col-lg-5">
@@ -159,12 +176,13 @@
             </div>
             <div class="col-lg-7">
               <div class="service-items ms-5">
-                <i class="bi bi-chat-square-dots-fill service-icon"></i>
-                <h5 class="service-title">پیام رسان</h5>
+                <i class="bi bi-film service-icon"></i>
+                <h5 class="service-title">تماشای آنلاین فیلم و سریال</h5>
                 <p class="service-text">
-                  پیام‌رسان روبیکا، دارای امکانات مفیدی مثل، تماس صوتی و تصویری،
-                  ارسال فایل و پخش زنده است؛ که بسیاری از امکانات این بخش با
-                  اینترنت رایگان همراه اول و ایرانسل ارائه می‌شوند.
+                  در روبیکا می‌توانید جدیدترین و محبوب‌ترین فیلم‌ها، انیمیشن‌ها
+                  و سریال‌ها را با دوبله اختصاصی تماشا کنید. از بین بیش از
+                  ۴۰،۰۰۰ برنامه، بهترین را انتخاب کنید و بر روی همه دستگاه‌های
+                  دیجیتال موبایل، وب و تلویزیون‌های هوشمند تماشا کنید.
                 </p>
               </div>
             </div>
@@ -172,18 +190,76 @@
         </div>
       </section>
       <!-- video section -->
-      <section>
-        <div>
-          <i class="bi bi-camera-reels-fill"></i>
-          <span>جدیدترین و محبوب ترین فیلم و سریال ها</span>
+      <section class="container-fluid video">
+        <div class="d-flex flex-nowrap ps-5">
+          <i class="video-icon bi bi-camera-reels-fill"></i>
+          <span class="video-title">جدیدترین و محبوب ترین فیلم و سریال ها</span>
         </div>
-        <p>
+        <p class="video-decription">
           با سرویس فیلم و سریال روبیکا، بدون نیاز به خرید اشتراک از تماشای
           جدیدترین فیلم‌ و سریال‌های ایرانی و خارجی با کیفیت بالا و دوبله عالی
           لذت ببرید.
         </p>
-        <div class="slider">
-            
+        <div class="row">
+          <div class="slider">
+            <div class="video-cards">
+              <div class="video-card">
+                <img
+                  class="video-card-image"
+                  src="./images/6.jpg"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Moore section -->
+      <section class="container-fluid moor">
+        <h3 class="moor-topic">و سایر امکانات سوپر اپلیکیشن روبیکا</h3>
+        <div class="moor-cards">
+          <!-- 1 -->
+          <div class="moor-card">
+            <img class="moor-card-image" src="./images/moor/wallet.png" alt="wallet image">
+            <p class="moor-card-text">کیف پول</p>
+          </div>
+          <!-- 2 -->
+          <div class="moor-card">
+            <img class="moor-card-image" src="./images/moor/child.png" alt="child image">
+            <p class="moor-card-text">کودک</p>
+          </div>
+          <!-- 3 -->
+          <div class="moor-card">
+            <img class="moor-card-image" src="./images/moor/vod.png" alt="vod image">
+            <p class="moor-card-text">پخش زنده</p>
+          </div>
+          <!-- 4 -->
+          <div class="moor-card">
+            <img class="moor-card-image" src="./images/moor/poll.png" alt="poll image">
+            <p class="moor-card-text">نظرسنجی</p>
+          </div>
+          <!-- 5 -->
+          <div class="moor-card">
+            <img class="moor-card-image" src="./images/moor/charity.png" alt="charity image">
+            <p class="moor-card-text">دنیای احسان
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- blog section -->
+      <section class="container-fluid blog">
+        <div class="blog-header">
+          <h6>تازه‌های روبیکا</h6>
+          <a href="#"> نمایش همه <i class="bi bi-caret-left-fill"></i></a>
+        </div>
+        <div class="blog-cards">
+          <div class="card blog-card" style="max-width: 25rem;">
+            <img src="./images/blog/arpvfgfvpannqfzudpxzpdusrrbxge.jpg" class="card-img-top" alt="...">
+            <div class="card-body blog-card-body">
+              <a href="#" class="blog-card-title">دستورالعمل پخش زنده مراسم‌های مذهبی در ایام عزاداری (1402)</a>
+              <p class="blog-card-text">شرایط ارسال پخش زنده به کانال پخش زنده مراسم‌های مذهبی در ایام عزاداری (۱۴۰۲)</p>
+            </div>
+          </div>
         </div>
       </section>
 

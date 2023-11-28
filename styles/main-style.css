@@ -2,9 +2,14 @@
   font-family: "iransans";
   src: url(./fonts/iransansweb.woff2) format("woff2");
 }
+@font-face {
+  font-family: "iransanslight";
+  src: url(./fonts/iransansweblight.woff2) format("woff2");
+}
 :root {
   --text-color: #212121;
   --purple: #794387;
+  --light-purple: #f7f4f8;
 }
 
 html {
@@ -76,6 +81,7 @@ html {
 }
 .service-title {
   color: var(--purple);
+  margin-top: 1.2rem;
 }
 .service-text {
   max-width: 360px;
@@ -85,6 +91,102 @@ html {
   font-weight: 400;
   font-size: 14px;
   line-height: 2.5rem;
+}
+
+.video {
+  background-color: var(--light-purple);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.video-icon {
+  color: var(--purple);
+  font-size: 1.5rem;
+}
+.video-title {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  padding-right: 1rem;
+}
+.video-decription {
+  margin-top: 2rem;
+  font-family: "iransanslight", sans-serif;
+  font-weight: bold;
+  margin-right: 3rem;
+}
+.video-cards {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.video-card {
+  width: 190px;
+  height: 275px;
+  background-color: #fff;
+  padding: 0.6rem;
+  border-radius: 15px;
+  box-shadow: 15px 15px 30px 0 rgba(0, 0, 0, 0.16);
+}
+.video-card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.moor {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.moor-topic {
+  text-align: center;
+}
+.moor-cards {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+.moor-card {
+  width: 170px;
+  height: 170px;
+  margin: 0 0.7rem;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.16);
+}
+.blog {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.blog-header a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.blog-header h6 {
+  font-size: 1.2rem;
+}
+.blog-cards {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.blog-card-title {
+  text-decoration: none !important;
+  color: var(--text-color);
+}
+.blog-card-text {
+  margin-top: 0.7rem;
+  font-family: "iransanslight", sans-serif !important;
 }
 
 @media (max-width: 510px) {
